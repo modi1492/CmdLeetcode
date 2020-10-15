@@ -68,11 +68,6 @@ public class LruCache {
         head.next = node;
     }
 
-    private void removeNode(DLinkedNode node) {
-        node.prev.next = node.next;
-        node.next.prev = node.prev;
-    }
-
     private void moveToHead(DLinkedNode node) {
         removeNode(node);
         addToHead(node);
@@ -82,5 +77,10 @@ public class LruCache {
         DLinkedNode res = tail.prev;
         removeNode(res);
         return res;
+    }
+
+    private void removeNode(DLinkedNode node) {
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
     }
 }
