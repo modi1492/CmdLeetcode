@@ -42,7 +42,7 @@ public class CourseSchedule {
     }
 }
 
-class Solution {
+class CourseSchedule1 {
     List<List<Integer>> edges;
     int[] indeg;
 
