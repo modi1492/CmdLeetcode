@@ -1,25 +1,45 @@
 public class LongestCommonPrefix {
+    public static void main(String[] args) {
+        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+//        String s = "abc";
+//        System.out.println(s.substring(0,2));
+        String[] strArray = new String[]{"flower", "flow", "flight"};
+        System.out.println(longestCommonPrefix.longestCommonPrefix(strArray));
+    }
+
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) {
             return "";
         }
-        String prefix = strs[0];
-        int count = strs.length;
-        for (int i = 1; i < count; i++) {
-            prefix = longestCommonPrefix(prefix, strs[i]);
-            if (prefix.length() == 0) {
+        int minLength = minLength(strs);
+        int i = 0;
+        for (; i < minLength; i++) {
+            if (!isSame(strs, i)) {
                 break;
             }
         }
-        return prefix;
+        return strs[0].substring(0, i);
     }
 
-    public String longestCommonPrefix(String str1, String str2) {
-        int length = Math.min(str1.length(), str2.length());
-        int index = 0;
-        while (index < length && str1.charAt(index) == str2.charAt(index)) {
-            index++;
+    boolean isSame(String[] strs, int i) {
+        boolean ans = true;
+        char c1 = strs[0].charAt(i);
+        for (String s : strs) {
+            if (s.charAt(i) != c1) {
+                ans = false;
+            }
         }
-        return str1.substring(0, index);
+        return ans;
     }
+
+    int minLength(String[] strs) {
+        int ans = Integer.MAX_VALUE;
+        for (String s : strs) {
+            if (s.length() < ans) {
+                ans = s.length();
+            }
+        }
+        return ans;
+    }
+
 }

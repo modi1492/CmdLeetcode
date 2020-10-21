@@ -3,14 +3,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class LetterCombinationsOfAPhoneNumber {
+class Solution {
     public List<String> letterCombinations(String digits) {
         List<String> combinations = new ArrayList<String>();
         if (digits.length() == 0) {
             return combinations;
         }
         Map<Character, String> phoneMap = new HashMap<Character, String>() {{
-            put('2', "abc");
+            put('2', "abc");6d
             put('3', "def");
             put('4', "ghi");
             put('5', "jkl");
