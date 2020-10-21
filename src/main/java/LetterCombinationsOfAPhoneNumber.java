@@ -10,7 +10,7 @@ class Solution {
             return combinations;
         }
         Map<Character, String> phoneMap = new HashMap<Character, String>() {{
-            put('2', "abc");6d
+            put('2', "abc");
             put('3', "def");
             put('4', "ghi");
             put('5', "jkl");
