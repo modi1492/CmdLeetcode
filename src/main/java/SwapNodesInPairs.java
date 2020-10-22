@@ -5,10 +5,10 @@ public class SwapNodesInPairs {
         ListNode first = new ListNode(1);
         ListNode second = new ListNode(2);
         ListNode third = new ListNode(3);
-        ListNode fourth = new ListNode(4);
+//        ListNode fourth = new ListNode(4);
         first.next = second;
         second.next = third;
-        third.next = fourth;
+//        third.next = fourth;
         SwapNodesInPairs swapNodesInPairs = new SwapNodesInPairs();
         ListNode.outputListNode(first);
         ListNode res = swapNodesInPairs.swapPairs(first);
@@ -20,12 +20,28 @@ public class SwapNodesInPairs {
         if (head == null || head.next == null) {
             return head;
         }
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode prev = dummy;
         ListNode first = head;
         ListNode second = head.next;
-        ListNode ans = second;
-        ListNode third = head.next.next;
+
+        while (true) {
+            first.next = second.next;
+            second.next = first;
+            prev.next = second;
+            if(first.next == null || first.next.next == null){
+                break;
+            }
+
+            prev = first;
+            second = first.next.next;
+            first = first.next;
+
+        }
 
 
+        return dummy.next;
     }
 
 }
