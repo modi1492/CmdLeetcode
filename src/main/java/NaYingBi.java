@@ -1,9 +1,9 @@
-public class NaYingBi{
+public class NaYingBi {
     public static void main(String[] args) {
         NaYingBi n = new NaYingBi();
-        int[] arr = new int[]{4,2,1};
+        int[] arr = new int[]{4, 2, 1};
         System.out.println(n.minCount(arr));
-        arr = new int[]{2,3,10};
+        arr = new int[]{2, 3, 10};
         System.out.println(n.minCount(arr));
     }
 

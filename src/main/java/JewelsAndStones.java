@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class JewelsAndStones{
+public class JewelsAndStones {
     public static void main(String[] args) {
         String J1 = "aA";
         String S1 = "aAAbbbb";
@@ -14,11 +14,11 @@ public class JewelsAndStones{
     public int numJewelsInStones(String J, String S) {
         int ans = 0;
         HashSet<Character> set = new HashSet<>();
-        for(int i = 0; i < J.length(); i++){
+        for (int i = 0; i < J.length(); i++) {
             set.add(J.charAt(i));
         }
-        for(int i = 0; i < S.length(); i++){
-            if(set.contains(S.charAt(i))){
+        for (int i = 0; i < S.length(); i++) {
+            if (set.contains(S.charAt(i))) {
                 ans += 1;
             }
         }

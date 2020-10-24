@@ -3,10 +3,10 @@ public class NextPermutation {
         // 1,5,8,4,7,6,5,3,1   -> 4
         // 1 5 8 5 7 6 4 3 1
         // 1 5 8 5 1 3 4 6 7
-        int[] nums = new int[]{1,5,8,4,7,6,5,3,1};
+        int[] nums = new int[]{1, 5, 8, 4, 7, 6, 5, 3, 1};
         NextPermutation n = new NextPermutation();
         n.nextPermutation(nums);
-        for(int i = 0; i < nums.length; i++){
+        for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i]);
         }
     }

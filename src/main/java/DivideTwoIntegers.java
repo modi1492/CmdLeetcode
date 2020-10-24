@@ -1,4 +1,4 @@
-public class DivideTwoIntegers{
+public class DivideTwoIntegers {
     public static void main(String[] args) {
         DivideTwoIntegers d = new DivideTwoIntegers();
         int dividend1 = 10, divisor1 = 3;
@@ -16,26 +16,26 @@ public class DivideTwoIntegers{
     }
 
     public int divide(int dividend, int divisor) {
-        if(dividend == 0){
+        if (dividend == 0) {
             return 0;
         }
         int absDividend = Math.abs(dividend);
         int absDivisor = Math.abs(divisor);
         int quotient = 0;
         int sum = 0;
-        while (sum <= absDividend){
+        while (sum <= absDividend) {
             quotient++;
             sum += absDivisor;
         }
         quotient--;
-        if(sameSymbol(dividend, divisor)){
+        if (sameSymbol(dividend, divisor)) {
             return quotient;
-        }else {
+        } else {
             return -quotient;
         }
     }
 
-    boolean sameSymbol(int a, int b){
+    boolean sameSymbol(int a, int b) {
         return (a > 0 && b > 0) || (a < 0 && b < 0);
     }
 }

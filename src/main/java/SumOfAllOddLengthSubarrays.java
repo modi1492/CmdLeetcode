@@ -23,7 +23,7 @@ public class SumOfAllOddLengthSubarrays {
                 sum1 += arr[i];
             }
             sum += sum1;
-            while (right < arr.length -1) {
+            while (right < arr.length - 1) {
                 sum1 = sum1 - arr[left];
                 left++;
                 right++;

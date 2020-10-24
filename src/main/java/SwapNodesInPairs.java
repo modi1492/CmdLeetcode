@@ -30,7 +30,7 @@ public class SwapNodesInPairs {
             first.next = second.next;
             second.next = first;
             prev.next = second;
-            if(first.next == null || first.next.next == null){
+            if (first.next == null || first.next.next == null) {
                 break;
             }
 

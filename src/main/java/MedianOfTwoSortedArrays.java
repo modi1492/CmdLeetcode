@@ -28,8 +28,7 @@ public class MedianOfTwoSortedArrays {
                 median1 = Math.max(nums_im1, nums_jm1);
                 median2 = Math.min(nums_i, nums_j);
                 left = i + 1;
-            }
-            else {
+            } else {
                 right = i - 1;
             }
         }

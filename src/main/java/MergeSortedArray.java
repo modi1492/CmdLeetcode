@@ -1,7 +1,7 @@
 public class MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         // Make a copy of nums1.
-        int [] nums1_copy = new int[m];
+        int[] nums1_copy = new int[m];
         System.arraycopy(nums1, 0, nums1_copy, 0, m);
 
         // Two get pointers for nums1_copy and nums2.

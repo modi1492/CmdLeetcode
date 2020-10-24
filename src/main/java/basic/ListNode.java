@@ -10,9 +10,9 @@ public class ListNode {
         next = null;
     }
 
-    public static void outputListNode(ListNode listNode){
+    public static void outputListNode(ListNode listNode) {
         ListNode node = listNode;
-        while (node != null){
+        while (node != null) {
             System.out.print(node.val);
             node = node.next;
         }

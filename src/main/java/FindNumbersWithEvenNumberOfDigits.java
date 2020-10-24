@@ -1,7 +1,7 @@
-public class FindNumbersWithEvenNumberOfDigits{
+public class FindNumbersWithEvenNumberOfDigits {
     public static void main(String[] args) {
         FindNumbersWithEvenNumberOfDigits f = new FindNumbersWithEvenNumberOfDigits();
-        int[]nums = new int[]{12,345,2,6,7896};
+        int[] nums = new int[]{12, 345, 2, 6, 7896};
 //        System.out.println(f.evenNumberOfDigits(22344));
         System.out.println(f.findNumbers(nums));
     }
@@ -16,9 +16,9 @@ public class FindNumbersWithEvenNumberOfDigits{
         return ans;
     }
 
-    private boolean evenNumberOfDigits(int num){
+    private boolean evenNumberOfDigits(int num) {
         int count = 0;
-        while (num != 0){
+        while (num != 0) {
             count += 1;
             num /= 10;
         }

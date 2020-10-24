@@ -1,7 +1,7 @@
 public class LongestPalindromicSubstring {
     public static void main(String[] args) {
         String s = "babad";
-        System.out.println(s.substring(0,2));
+        System.out.println(s.substring(0, 2));
         LongestPalindromicSubstring lps = new LongestPalindromicSubstring();
         System.out.println(lps.longestPalindrome(s));
     }
@@ -19,7 +19,7 @@ public class LongestPalindromicSubstring {
                 } else {
                     dp[row][col] = dp[row + 1][col - 1] && (s.charAt(row) == s.charAt(col));
                 }
-                if(dp[row][col] && (col - row + 1 > ans.length())){
+                if (dp[row][col] && (col - row + 1 > ans.length())) {
                     ans = s.substring(row, col + 1);
                 }
             }

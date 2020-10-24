@@ -2,7 +2,7 @@ public class RemoveDuplicateLetters {
     public static void main(String[] args) {
         RemoveDuplicateLetters rl = new RemoveDuplicateLetters();
         int[] nums1 = {1, 1, 2};
-        int[] nums2 = {0,0,1,1,1,2,2,3,3,4};
+        int[] nums2 = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         System.out.println(rl.removeDuplicates2(nums1));
         System.out.println(rl.removeDuplicates2(nums2));
 
@@ -22,7 +22,7 @@ public class RemoveDuplicateLetters {
                 for (int j = i + 1; j < nums.length; j++) {
                     nums[j - 1] = nums[j];
                 }
-            }else {
+            } else {
                 i++;
             }
         }
@@ -35,13 +35,13 @@ public class RemoveDuplicateLetters {
         }
         int i = 0;
         int j = 1;
-        while (j < nums.length){
-            if(nums[j] != nums[i]){
+        while (j < nums.length) {
+            if (nums[j] != nums[i]) {
                 i++;
                 nums[i] = nums[j];
             }
             j++;
         }
-        return i+1;
+        return i + 1;
     }
 }

@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/** 3位
+/**
+ * 3位
  * 0        000
  * 1        001
  * 3        011
@@ -16,8 +17,11 @@ class GrayCode {
         GrayCode grayCode = new GrayCode();
         System.out.println(grayCode.grayCode(3));
     }
+
     public List<Integer> grayCode(int n) {
-        List<Integer> res = new ArrayList<Integer>() {{ add(0); }};
+        List<Integer> res = new ArrayList<Integer>() {{
+            add(0);
+        }};
         int head = 1;
         for (int i = 0; i < n; i++) {
             for (int j = res.size() - 1; j >= 0; j--)

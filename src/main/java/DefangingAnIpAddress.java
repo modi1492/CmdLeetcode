@@ -1,4 +1,4 @@
-public class DefangingAnIpAddress{
+public class DefangingAnIpAddress {
     public static void main(String[] args) {
         DefangingAnIpAddress d = new DefangingAnIpAddress();
         String s = "1.1.1.1";
@@ -8,12 +8,12 @@ public class DefangingAnIpAddress{
     }
 
     public String defangIPaddr(String address) {
-        if(address == null || address.length() == 0){
+        if (address == null || address.length() == 0) {
             return "";
         }
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < address.length(); i++){
-            if(address.charAt(i) == '.'){
+        for (int i = 0; i < address.length(); i++) {
+            if (address.charAt(i) == '.') {
                 sb.append("[.]");
                 continue;
             }

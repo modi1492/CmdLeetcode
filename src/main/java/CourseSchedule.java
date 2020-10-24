@@ -27,7 +27,7 @@ public class CourseSchedule {
 
     public void dfs(int u) {
         visited[u] = 1;
-        for (int v: edges.get(u)) {
+        for (int v : edges.get(u)) {
             if (visited[v] == 0) {
                 dfs(v);
                 if (!valid) {
@@ -68,7 +68,7 @@ class CourseSchedule1 {
         while (!queue.isEmpty()) {
             ++visited;
             int u = queue.poll();
-            for (int v: edges.get(u)) {
+            for (int v : edges.get(u)) {
                 --indeg[v];
                 if (indeg[v] == 0) {
                     queue.offer(v);

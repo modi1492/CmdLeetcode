@@ -1,6 +1,6 @@
 import basic.ListNode;
 
-public class DeleteNodeInALinkedList{
+public class DeleteNodeInALinkedList {
     public static void main(String[] args) {
         DeleteNodeInALinkedList d = new DeleteNodeInALinkedList();
 

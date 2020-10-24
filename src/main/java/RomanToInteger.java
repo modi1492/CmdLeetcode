@@ -21,14 +21,14 @@ public class RomanToInteger {
     public int romanToInt(String s) {
         int n = s.length();
         int ans = 0;
-        for(int i = 0; i < s.length();i++){
-            if(i == s.length() - 1){
+        for (int i = 0; i < s.length(); i++) {
+            if (i == s.length() - 1) {
                 ans += getValue(s.charAt(i));
                 break;
             }
-            if(getValue(s.charAt(i)) >= getValue(s.charAt(i+1))){
+            if (getValue(s.charAt(i)) >= getValue(s.charAt(i + 1))) {
                 ans += getValue(s.charAt(i));
-            }else {
+            } else {
                 ans -= getValue(s.charAt(i));
             }
         }

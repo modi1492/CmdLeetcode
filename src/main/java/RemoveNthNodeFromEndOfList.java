@@ -1,6 +1,6 @@
 import basic.ListNode;
 
-public class RemoveNthNodeFromEndOfList{
+public class RemoveNthNodeFromEndOfList {
     public static void main(String[] args) {
 
     }
@@ -11,10 +11,10 @@ public class RemoveNthNodeFromEndOfList{
 
         ListNode first = dummy;
         ListNode second = dummy;
-        for(int i = 0; i <n; i++){
+        for (int i = 0; i < n; i++) {
             second = second.next;
         }
-        while (second.next != null){
+        while (second.next != null) {
             first = first.next;
             second = second.next;
         }

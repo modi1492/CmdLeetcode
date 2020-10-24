@@ -1,4 +1,4 @@
-public class RemoveVowelsFromAString{
+public class RemoveVowelsFromAString {
     public static void main(String[] args) {
         String s1 = "leetcodeisacommunityforcoders";
         String s2 = "aeiou";
@@ -8,13 +8,13 @@ public class RemoveVowelsFromAString{
     }
 
     public String removeVowels(String s) {
-        if(s == null){
+        if (s == null) {
             return "";
         }
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < s.length(); i++){
+        for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
                 continue;
             }
             sb.append(ch);

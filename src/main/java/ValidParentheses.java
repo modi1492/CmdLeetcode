@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class ValidParentheses{
+public class ValidParentheses {
     public static void main(String[] args) {
         ValidParentheses validParentheses = new ValidParentheses();
         System.out.println(validParentheses.isValid("]"));
@@ -18,17 +18,18 @@ public class ValidParentheses{
 //        stack.pop();
 //        System.out.println(stack.size());
     }
+
     public boolean isValid(String s) {
         Deque<Character> stack = new LinkedList<Character>();
-        for(int i = 0; i < s.length(); i++){
+        for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if(ch == '(' || ch =='[' || ch == '{' || stack.isEmpty()){
+            if (ch == '(' || ch == '[' || ch == '{' || stack.isEmpty()) {
                 stack.push(ch);
-            }else {
+            } else {
                 char top = stack.peek();
-                if(isPair(ch, top)){
+                if (isPair(ch, top)) {
                     stack.pop();
-                }else {
+                } else {
                     stack.push(ch);
                 }
             }
@@ -36,11 +37,11 @@ public class ValidParentheses{
         return stack.isEmpty();
     }
 
-    boolean isPair(char ch1, char ch2){
-        if(ch1 == '(' && ch2 == ')' || ch1 == ')' && ch2 == '('){
+    boolean isPair(char ch1, char ch2) {
+        if (ch1 == '(' && ch2 == ')' || ch1 == ')' && ch2 == '(') {
             return true;
         }
-        if(ch1 == '[' && ch2 == ']' || ch1 == ']' && ch2 == '['){
+        if (ch1 == '[' && ch2 == ']' || ch1 == ']' && ch2 == '[') {
             return true;
         }
         return ch1 == '{' && ch2 == '}' || ch1 == '}' && ch2 == '{';
