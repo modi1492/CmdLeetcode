@@ -19,7 +19,7 @@ public class LongestPalindromeLength {
         }
         int ans = 0;
         int odd = 0;
-        for (Map.Entry<Character,Integer> entry : map.entrySet()) {
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
             int num = entry.getValue();
             if (num % 2 == 0) {
                 ans += entry.getValue();

@@ -8,9 +8,9 @@ public class FindWordsThatCanBeFormedByCharacters {
         String[] words = new String[]{"cat", "bt", "hat", "tree"};
         String chars = "atach";
         System.out.println(f.countCharacters(words, chars));
-        words = new String[]{"hello","world","leetcode"};
+        words = new String[]{"hello", "world", "leetcode"};
         chars = "welldonehoneyr";
-        System.out.println(f.countCharacters(words,chars));
+        System.out.println(f.countCharacters(words, chars));
     }
 
     public int countCharacters(String[] words, String chars) {
@@ -32,7 +32,7 @@ public class FindWordsThatCanBeFormedByCharacters {
                     break;
                 }
             }
-            if(flag){
+            if (flag) {
                 ans += word.length();
             }
         }

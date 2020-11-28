@@ -8,10 +8,10 @@ public class KthToLast {
 //        dummy.next = head;
         ListNode first = head;
         ListNode second = head;
-        for(int i = 0; i < k;i++){
+        for (int i = 0; i < k; i++) {
             second = second.next;
         }
-        while (second != null){
+        while (second != null) {
             first = first.next;
             second = second.next;
         }

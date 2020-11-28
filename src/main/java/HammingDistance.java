@@ -1,6 +1,7 @@
-public class HammingDistance{
+public class HammingDistance {
     public static void main(String[] args) {
-        int x = 1; int y = 4;
+        int x = 1;
+        int y = 4;
         HammingDistance h = new HammingDistance();
         System.out.println(h.hammingDistance(1, 4));
     }
@@ -9,9 +10,9 @@ public class HammingDistance{
         return oneNumber(x ^ y);
     }
 
-    private int oneNumber(int n){
+    private int oneNumber(int n) {
         int ans = 0;
-        while (n != 0){
+        while (n != 0) {
             ans += n % 2;
             n /= 2;
         }

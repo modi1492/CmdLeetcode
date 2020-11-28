@@ -6,7 +6,7 @@ public class ReverseString {
         char[] arr = new char[]{'h', 'e', 'l', 'l', 'o'};
         r.reverseString(arr);
         System.out.println(Arrays.toString(arr));
-        arr = new char[]{'H','a','n','n','a','h'};
+        arr = new char[]{'H', 'a', 'n', 'n', 'a', 'h'};
         r.reverseString(arr);
         System.out.println(Arrays.toString(arr));
     }

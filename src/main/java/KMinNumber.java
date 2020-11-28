@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class KMinNumber {
     public static void main(String[] args) {
-        int[] nums = new int[]{3,2,1};
+        int[] nums = new int[]{3, 2, 1};
         Arrays.sort(nums);
         System.out.println(Arrays.toString(nums));
     }

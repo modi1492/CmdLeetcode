@@ -19,7 +19,7 @@ public class ReverseString2 {
      * @return
      */
     public String reverseWords(String s) {
-        if(s.equals("")){
+        if (s.equals("")) {
             return "";
         }
         int firstNonSpace = 0;

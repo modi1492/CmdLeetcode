@@ -2,7 +2,7 @@ import basic.NestedInteger;
 
 import java.util.List;
 
-public class NestedListWeightSum{
+public class NestedListWeightSum {
 
     public static void main(String[] args) {
         // [2,[1,1]]
@@ -13,10 +13,10 @@ public class NestedListWeightSum{
     public int depthSum(List<NestedInteger> nestedList) {
         deep++;
         int ans = 0;
-        for(NestedInteger n: nestedList){
-            if(n.isInteger()){
+        for (NestedInteger n : nestedList) {
+            if (n.isInteger()) {
                 ans += n.getInteger() * deep;
-            }else {
+            } else {
                 ans += depthSum(n.getList());
             }
         }

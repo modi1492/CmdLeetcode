@@ -13,9 +13,9 @@ public class UniqueMorseCodeWords {
 
     public int uniqueMorseRepresentations(String[] words) {
         Set<String> set = new HashSet<>();
-        for(String s: words){
+        for (String s : words) {
             StringBuilder sb = new StringBuilder();
-            for(int i = 0; i < s.length(); i++){
+            for (int i = 0; i < s.length(); i++) {
                 sb.append(word2Mose(s.charAt(i)));
             }
             set.add(sb.toString());

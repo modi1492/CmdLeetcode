@@ -14,7 +14,7 @@ public class MaximumProductOfTwoElementsInAnArray {
                 largest = nums[i];
                 continue;
             }
-            if(nums[i] >= secondLarget){
+            if (nums[i] >= secondLarget) {
                 secondLarget = nums[i];
             }
         }

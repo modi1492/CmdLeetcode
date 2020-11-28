@@ -1,8 +1,8 @@
 import java.util.PriorityQueue;
 
-public class RelativeRanks{
+public class RelativeRanks {
     public static void main(String[] args) {
-        int[] nums = new int[]{2,8,8,8,2};
+        int[] nums = new int[]{2, 8, 8, 8, 2};
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         for (int num : nums) {
             queue.add(num);

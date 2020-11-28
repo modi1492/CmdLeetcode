@@ -6,7 +6,7 @@ public class SymmetricTree {
     }
 
     public boolean isSymmetric(TreeNode root) {
-        return isSymmetric(root,root);
+        return isSymmetric(root, root);
     }
 
     /**

@@ -2,7 +2,7 @@ import basic.TreeNode;
 
 public class BinaryTreeMirror {
     public TreeNode mirrorTree(TreeNode root) {
-        if(root == null){
+        if (root == null) {
             return null;
         }
         TreeNode left = mirrorTree(root.left);

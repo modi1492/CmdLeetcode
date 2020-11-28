@@ -29,7 +29,7 @@ public class PathCrossing {
             }
             if (set.contains(x + "" + y)) {
                 return true;
-            }else {
+            } else {
                 set.add(x + "" + y);
             }
         }

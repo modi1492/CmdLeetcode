@@ -10,8 +10,8 @@ public class NumberOfStudentsDoingHomeworkAtAGivenTime {
         endTime = new int[]{4};
         queryTime = 4;
         System.out.println(n.busyStudent(startTime, endTime, queryTime));
-        startTime = new int[]{9,8,7,6,5,4,3,2,1};
-        endTime = new int[]{10,10,10,10,10,10,10,10,10};
+        startTime = new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1};
+        endTime = new int[]{10, 10, 10, 10, 10, 10, 10, 10, 10};
         queryTime = 5;
         System.out.println(n.busyStudent(startTime, endTime, queryTime));
 

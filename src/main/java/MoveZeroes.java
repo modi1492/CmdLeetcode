@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class MoveZeroes {
     public static void main(String[] args) {
         MoveZeroes m = new MoveZeroes();
-        int[] arr = new int[]{0,1,0,3,0,12};
+        int[] arr = new int[]{0, 1, 0, 3, 0, 12};
         m.moveZeroes(arr);
         System.out.println(Arrays.toString(arr));
     }

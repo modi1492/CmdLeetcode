@@ -1,12 +1,12 @@
 import basic.TreeNode;
 
-public class InvertBinaryTree{
+public class InvertBinaryTree {
     public static void main(String[] args) {
 
     }
 
     public TreeNode invertTree(TreeNode root) {
-        if(root == null){
+        if (root == null) {
             return null;
         }
         TreeNode left = invertTree(root.left);

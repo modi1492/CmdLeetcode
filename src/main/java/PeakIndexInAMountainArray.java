@@ -22,7 +22,7 @@ public class PeakIndexInAMountainArray {
                 end = mid - 1;
             }
         }
-        if ((start == 0 && arr[start] > arr[start + 1]) || ( start > 0 && arr[start] > arr[start - 1] && arr[start] > arr[start + 1])) {
+        if ((start == 0 && arr[start] > arr[start + 1]) || (start > 0 && arr[start] > arr[start - 1] && arr[start] > arr[start + 1])) {
             return start;
         } else {
             return end;

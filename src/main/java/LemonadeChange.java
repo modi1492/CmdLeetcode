@@ -1,13 +1,13 @@
-public class LemonadeChange{
+public class LemonadeChange {
     public static void main(String[] args) {
         LemonadeChange l = new LemonadeChange();
-        int[] bills = new int[]{5,5,5,10,20};
+        int[] bills = new int[]{5, 5, 5, 10, 20};
         System.out.println(l.lemonadeChange(bills));
-        bills = new int[]{5,5,10};
+        bills = new int[]{5, 5, 10};
         System.out.println(l.lemonadeChange(bills));
-        bills = new int[]{10,10};
+        bills = new int[]{10, 10};
         System.out.println(l.lemonadeChange(bills));
-        bills = new int[]{5,5,10,10,20};
+        bills = new int[]{5, 5, 10, 10, 20};
         System.out.println(l.lemonadeChange(bills));
     }
 

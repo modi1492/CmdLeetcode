@@ -8,7 +8,7 @@ public class IsomorphicStrings {
 //        System.out.println(i.isIsomorphic("egg","add"));
 //        System.out.println(i.isIsomorphic("foo","bar"));
         System.out.println(i.isIsomorphic("paper", "title"));
-        System.out.println(i.isIsomorphic("aa","ba"));
+        System.out.println(i.isIsomorphic("aa", "ba"));
         System.out.println(i.isIsomorphic("ab", "aa"));
     }
 
@@ -19,9 +19,9 @@ public class IsomorphicStrings {
             char c1 = s.charAt(i);
             char c2 = t.charAt(i);
             if (!map.containsKey(c2)) {
-                map.put(c2,c1);
+                map.put(c2, c1);
             }
-            if(map.containsKey(c2) && c1 != map.get(c2)){
+            if (map.containsKey(c2) && c1 != map.get(c2)) {
                 return false;
             }
         }

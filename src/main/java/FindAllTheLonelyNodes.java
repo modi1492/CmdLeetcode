@@ -3,7 +3,7 @@ import basic.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FindAllTheLonelyNodes{
+public class FindAllTheLonelyNodes {
     public static void main(String[] args) {
 
     }
@@ -14,17 +14,17 @@ public class FindAllTheLonelyNodes{
         return lst;
     }
 
-    private void help(TreeNode root, List<Integer> lst){
-        if(root == null){
+    private void help(TreeNode root, List<Integer> lst) {
+        if (root == null) {
             return;
         }
-        if(root.left !=null && root.right == null){
+        if (root.left != null && root.right == null) {
             lst.add(root.left.val);
         }
-        if(root.left == null && root.right != null){
+        if (root.left == null && root.right != null) {
             lst.add(root.right.val);
         }
         help(root.left, lst);
-        help(root.right,lst);
+        help(root.right, lst);
     }
 }
