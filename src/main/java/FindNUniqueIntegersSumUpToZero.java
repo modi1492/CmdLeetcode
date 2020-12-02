@@ -14,5 +14,6 @@ public class FindNUniqueIntegersSumUpToZero{
         for(int i = 1; i < n;i++){
 
         }
+        return new int[0];
     }
 }
