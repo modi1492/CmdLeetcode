@@ -6,6 +6,7 @@ public class MergeSortedArray {
         int []num1 = new int[]{1,2,3,0,0,0};
         int [] num2 = new int[]{2,5,6};
         int m = 3, n = 3;
+        num1 = new int[]{4,5,6,0,0,0}; m = 3; num2 = new int[]{1,2,3}; n = 3;
         mA.merge(num1,m,num2,n);
     }
 
@@ -29,9 +30,10 @@ public class MergeSortedArray {
         }
         while (q >= 0){
             nums1[length--] = nums2[q--];
-            q--;
         }
-        System.out.println(Arrays.toString(nums1));
+        while (p >=0){
+            nums1[length--] = nums1[p--];
+        }
     }
 }
 
