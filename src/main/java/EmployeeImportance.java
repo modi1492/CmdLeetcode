@@ -1,23 +1,28 @@
 import basic.Employee;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class EmployeeImportance {
-    Map<Integer, Employee> emap;
+    public static void main(String[] args) {
 
-    public int getImportance(List<Employee> employees, int queryid) {
-        emap = new HashMap();
-        for (Employee e : employees) emap.put(e.id, e);
-        return dfs(queryid);
     }
 
-    public int dfs(int eid) {
-        Employee employee = emap.get(eid);
-        int ans = employee.importance;
-        for (Integer subid : employee.subordinates)
-            ans += dfs(subid);
+    public int getImportance(List<Employee> employees, int id) {
+        Map<Integer, Employee> map = new HashMap<>();
+        for (Employee e : employees) {
+            map.put(e.id, e);
+        }
+        Employee employee = map.get(id);
+        Queue<Employee> queue = new LinkedList<>();
+        queue.offer(employee);
+        int ans = 0;
+        while (!queue.isEmpty()) {
+            Employee poll = queue.poll();
+            ans += poll.importance;
+            for (Integer s : poll.subordinates) {
+                queue.offer(map.get(s));
+            }
+        }
         return ans;
     }
 }
