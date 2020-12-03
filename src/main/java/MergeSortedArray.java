@@ -1,44 +1,37 @@
+import java.util.Arrays;
+
 public class MergeSortedArray {
+    public static void main(String[] args) {
+        MergeSortedArray mA = new MergeSortedArray();
+        int []num1 = new int[]{1,2,3,0,0,0};
+        int [] num2 = new int[]{2,5,6};
+        int m = 3, n = 3;
+        mA.merge(num1,m,num2,n);
+    }
+
+    /**
+     * 从后往前遍历 从大到小排列
+     * @param nums1
+     * @param m
+     * @param nums2
+     * @param n
+     */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        // Make a copy of nums1.
-        int[] nums1_copy = new int[m];
-        System.arraycopy(nums1, 0, nums1_copy, 0, m);
-
-        // Two get pointers for nums1_copy and nums2.
-        int p1 = 0;
-        int p2 = 0;
-
-        // Set pointer for nums1
-        int p = 0;
-
-        // Compare elements from nums1_copy and nums2
-        // and add the smallest one into nums1.
-        while ((p1 < m) && (p2 < n))
-            nums1[p++] = (nums1_copy[p1] < nums2[p2]) ? nums1_copy[p1++] : nums2[p2++];
-
-        // if there are still elements to add
-        if (p1 < m)
-            System.arraycopy(nums1_copy, p1, nums1, p1 + p2, m + n - p1 - p2);
-        if (p2 < n)
-            System.arraycopy(nums2, p2, nums1, p1 + p2, m + n - p1 - p2);
+        int p = m -1;       // p指向num1
+        int q = n - 1;       // q指向num2
+        int length = m + n - 1; // length指向结果数组
+        while (p >= 0 && q >= 0){
+            if(nums1[p] > nums2[q]){
+                nums1[length--] = nums1[p--];
+            }else {
+                nums1[length--] = nums2[q--];
+            }
+        }
+        while (q >= 0){
+            nums1[length--] = nums2[q--];
+            q--;
+        }
+        System.out.println(Arrays.toString(nums1));
     }
-
-    public void merge1(int[] nums1, int m, int[] nums2, int n) {
-        // two get pointers for nums1 and nums2
-        int p1 = m - 1;
-        int p2 = n - 1;
-        // set pointer for nums1
-        int p = m + n - 1;
-
-        // while there are still elements to compare
-        while ((p1 >= 0) && (p2 >= 0))
-            // compare two elements from nums1 and nums2
-            // and add the largest one in nums1
-            nums1[p--] = (nums1[p1] < nums2[p2]) ? nums2[p2--] : nums1[p1--];
-
-        // add missing elements from nums2
-        System.arraycopy(nums2, 0, nums1, 0, p2 + 1);
-    }
-
 }
 
