@@ -19,6 +19,7 @@ public class GDT {
     private String P;
     private String DPL;
     private String S;
-    private String TYPE;
+    private Integer TYPE;
+    private String TYPE_DESC;
 
 }

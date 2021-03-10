@@ -1,22 +1,43 @@
 package os;
 
-import com.sun.deploy.util.StringUtils;
+import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import static os.Utils.*;
 
 class GDTTransform {
     private static final Integer BIT_SIZE = 32;
 
     public static void main(String[] args) {
-        GDTTransform g = new GDTTransform();
-        System.out.println(g.trans2GDT(0x0000ffff, 0x00cf9200));    // ok
-        System.out.println(g.trans2GDT(0x7c0001ff, 0x00409800));    // nok
-        System.out.println(g.trans2GDT(0x7c00fffe, 0x00cf9600));    // nok
-        System.out.println(g.trans2GDT(0x80007fff, 0x0040920b));    // nok
+        System.out.println(trans2GDT(0x0000ffff, 0x00cf9200));    // ok
+        System.out.println(trans2GDT(0x7c0001ff, 0x00409800));    //
+        System.out.println(trans2GDT(0x7c00fffe, 0x00cf9600));    //
+        System.out.println(trans2GDT(0x80007fff, 0x0040920b));    //
+        System.out.println("index == 1");
+        System.out.println(trans2GDT(0x0000ffff, 0x00cf9200));    //
+        System.out.println("index == 2");
+        System.out.println(trans2GDT(0x7c0001ff, 0x00409800));    //
+        System.out.println("index == 3");
+        System.out.println(trans2GDT(0x7c00fffe, 0x00cf9600));    //
+        System.out.println("index == 4");
+        System.out.println(trans2GDT(0x80007fff, 0x0040920b));    //
+        System.out.println(trans2GDT(0x8000ffff, 0x0040920b));    //
+        System.out.println(trans2GDT(0x00007a00, 0x00409600));    //
 
+
+        System.out.println("========");
+        System.out.println(trans2GDTAttr(0x00409800));
+        System.out.println(trans2GDTAttr(0x00409200));
+        System.out.println(trans2GDTAttr(0x00409800));
+        System.out.println(trans2GDTAttr(0x00c09600));
+        System.out.println(trans2GDTAttr(0x0040f200));
+
+        System.out.println("==============");
+        List<Integer> list = Lists.newArrayList(1,1,0);
+        System.out.println(getTypeDesc(list));
     }
 
     /**
@@ -24,9 +45,9 @@ class GDTTransform {
      * @param y GDT的高 16位
      * @return
      */
-    private static GDT trans2GDT(int x, int y) {
-        List<Integer> low32 = toBinary(x);
-        List<Integer> high32 = toBinary(y);
+    public static GDT trans2GDT(int x, int y) {
+        List<Integer> low32 = toBinary(x,32);
+        List<Integer> high32 = toBinary(y,32);
         Collections.reverse(low32);
         Collections.reverse(high32);
         List<Integer> segBase = new ArrayList<>();
@@ -92,45 +113,109 @@ class GDTTransform {
                 .AVL(binaryString2HexString(AVL))
                 .P(binaryString2HexString(P))
                 .S(binaryString2HexString(S))
-                .TYPE(binaryString2HexString(Type))
+                .TYPE(binaryString2Decimal(Type))
+                .TYPE_DESC(getTypeDesc(Type))
                 .build();
     }
 
     /**
-     * 将整数转换成有16个二进制数的列表
-     *
-     * @param x
+     * 根据描述符的高16位输出 输出除段基址和界限之外的其他属性
+     * @param y
      * @return
      */
-    private static List<Integer> toBinary(int x) {
-        String s1 = Integer.toBinaryString(x);
-        String[] split = s1.split("");
-        List<Integer> ans = new ArrayList<>();
-        for(String s : split){
-            ans.add(Integer.parseInt(s));
-        }
-        if(ans.size() < 32){
-            int size = 32 - ans.size();
-            for(int i = 0; i < size; i++){
-                ans.add(0,0);
-            }
-        }
-        return ans;
+    public static GDT trans2GDTAttr(int y) {
+        List<Integer> high32 = toBinary(y,32);
+        Collections.reverse(high32);
+
+        // DPL
+        List<Integer> DPL = new ArrayList<>();
+        DPL.addAll(high32.subList(13, 15));
+        Collections.reverse(DPL);
+
+        // G
+        List<Integer> G = new ArrayList<>();
+        G.addAll(high32.subList(23,24));
+        Collections.reverse(G);
+
+        // DorB
+        List<Integer> DorB = new ArrayList<>();
+        DorB.addAll(high32.subList(22,23));
+        Collections.reverse(DorB);
+
+        // L
+        List<Integer> L = new ArrayList<>();
+        L.addAll(high32.subList(21,22));
+        Collections.reverse(L);
+
+        // AVL
+        List<Integer> AVL = new ArrayList<>();
+        AVL.addAll(high32.subList(20,21));
+        Collections.reverse(AVL);
+
+        // P
+        List<Integer> P = new ArrayList<>();
+        P.addAll(high32.subList(15,16));
+        Collections.reverse(P);
+
+        // S
+        List<Integer> S = new ArrayList<>();
+        S.addAll(high32.subList(12,13));
+        Collections.reverse(S);
+
+        // Type
+        List<Integer> Type = new ArrayList<>();
+        Type.addAll(high32.subList(8,12));
+        Collections.reverse(Type);
+
+        return GDT.builder()
+                .DPL(binaryString2HexString(DPL))
+                .G(binaryString2HexString(G))
+                .DorB(binaryString2HexString(DorB))
+                .L(binaryString2HexString(L))
+                .AVL(binaryString2HexString(AVL))
+                .P(binaryString2HexString(P))
+                .S(binaryString2HexString(S))
+                .TYPE(binaryString2Decimal(Type))
+                .TYPE_DESC(getTypeDesc(Type))
+                .build();
     }
 
-    /**
-     * 110 -> 6
-     * @param list
-     * @return
-     */
-    private static String binaryString2HexString(List<Integer> list) {
-        int sum = 0;
-        int pow = 1;
-        Collections.reverse(list);
-        for(Integer i : list){
-            sum += i * pow;
-            pow *= 2;
+    public static String getTypeDesc(List<Integer> type){
+        int size = type.size();
+        if(size < 4){
+            for(int i = 0; i < 4 - size; i++){
+                type.add(0,0);
+            }
         }
-        return Integer.toHexString(sum);
+        Integer first = type.get(0);
+        Integer second = type.get(1);
+        Integer third = type.get(2);
+        List<Integer> newList = Lists.newArrayList(first,second,third);
+        int value = binaryString2Decimal(newList);
+        switch (value){
+            case 0:
+                return "数据 只读";
+            case 1:
+                return "数据 读 写";
+            case 2:
+                return "数据 只读 向下扩展";
+            case 3:
+                return "数据 读 写 向下扩展";
+            case 4:
+                return "代码 只执行";
+            case 5:
+                return "代码 执行 读";
+            case 6:
+                return "代码 只执行 依从的代码段";
+            case 7:
+                return "代码 执行 读 依从的代码段";
+            default:
+                return "null";
+        }
     }
+
+
+
+
+
 }
