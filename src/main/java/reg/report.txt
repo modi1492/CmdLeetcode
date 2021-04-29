@@ -1,0 +1,16 @@
+From: hello
+Subject: word
+SUBJECT: word
+jdkfa
+kfjsafjafka
+kkjfa
+cat
+dog cat bird cat
+goose fish cat
+
+
+egrep '^(From|Subject): ' report.txt
+egrep '^cat' report.txt
+egrep 'cat$' report.txt
+egrep '^cat$' report.txt
+egrep -i '^(From|Subject|Date): ' report.txt
