@@ -3,6 +3,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
+/**
+ * https://leetcode-cn.com/problems/next-greater-element-iii/
+ */
 public class NextGreaterElementII {
     public static void main(String[] args) {
         NextGreaterElementII n = new NextGreaterElementII();
