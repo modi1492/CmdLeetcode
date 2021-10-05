@@ -7,9 +7,15 @@ public class RotateString {
         s = "abcde";
         goal = "abced";
         System.out.println(r.rotateString(s,goal));
+        s = "";
+        goal = "";
+        System.out.println(r.rotateString(s,goal));
     }
 
     public boolean rotateString(String s, String goal) {
+        if(s.equals("") && goal.equals("")){
+            return true;
+        }
         for (int i = 0; i < s.length(); i++) {
             if (s.equals(goal)) {
                 return true;
