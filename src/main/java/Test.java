@@ -7,12 +7,10 @@ import java.util.Stack;
 public class Test {
 
     public static void main(String[] args) {
-        TreeNode t1 = new TreeNode(1);
-        TreeNode t2 = new TreeNode(2);
-        TreeNode t3 = new TreeNode(3);
-        t1.left = t2; t1.right = t3;
-        Test t = new Test();
-        System.out.println(preOrder1(t1));
+        Stack<int[][]> stack = new Stack<>();
+        int[][] arr = new int[][]{{1,1},{2,2}};
+        stack.push(arr);
+        System.out.println(stack);
     }
 
     public static List<Integer> preOrder1(TreeNode root){
