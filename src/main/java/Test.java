@@ -1,16 +1,20 @@
 import basic.TreeNode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
 public class Test {
 
     public static void main(String[] args) {
-        Stack<int[][]> stack = new Stack<>();
-        int[][] arr = new int[][]{{1,1},{2,2}};
-        stack.push(arr);
-        System.out.println(stack);
+        List<Integer> lst = new ArrayList<>();
+        for(int i = 0; i < 10;i++){
+            lst.add(i);
+        }
+        System.out.println(lst);
+        Collections.swap(lst, 0,9);
+        System.out.println(lst);
     }
 
     public static List<Integer> preOrder1(TreeNode root){
