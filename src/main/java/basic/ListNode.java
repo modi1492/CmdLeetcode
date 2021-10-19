@@ -21,6 +21,7 @@ public class ListNode {
         ListNode node = listNode;
         while (node != null) {
             System.out.print(node.val);
+            System.out.print("->");
             node = node.next;
         }
         System.out.println();
