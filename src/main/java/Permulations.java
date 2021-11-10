@@ -22,18 +22,18 @@ public class Permulations {
         return res;
     }
 
-    public void backtrack(int n, List<Integer> output, List<List<Integer>> res, int first) {
+    public void backtrack(int n, List<Integer> output, List<List<Integer>> res, int level) {
         // 所有数都填完了
-        if (first == n) {
+        if (level == n) {
             res.add(new ArrayList<Integer>(output));
         }
-        for (int i = first; i < n; i++) {
+        for (int i = level; i < n; i++) {
             // 动态维护数组
-            Collections.swap(output, first, i);
+            Collections.swap(output, level, i);
             // 继续递归填下一个数
-            backtrack(n, output, res, first + 1);
+            backtrack(n, output, res, level + 1);
             // 撤销操作
-            Collections.swap(output, first, i);
+            Collections.swap(output, level, i);
         }
     }
 
