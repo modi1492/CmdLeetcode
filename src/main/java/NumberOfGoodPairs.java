@@ -24,3 +24,4 @@ public class NumberOfGoodPairs {
         return ans;
     }
 }
+// https://leetcode.cn/problems/Number-Of-Good-Pairs

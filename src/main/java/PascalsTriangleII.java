@@ -38,3 +38,5 @@ public class PascalsTriangleII {
         return res;
     }
 }
+
+// https://leetcode.cn/problems/Pascals-Triangle-II

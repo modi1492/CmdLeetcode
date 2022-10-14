@@ -29,3 +29,5 @@ public class LongestContinuousIncreasingSubsequence {
         return ans;
     }
 }
+
+// https://leetcode.cn/problems/Longest-Continuous-Increasing-Subsequence

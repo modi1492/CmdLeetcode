@@ -41,3 +41,5 @@ public class NextPermutation {
         nums[j] = temp;
     }
 }
+
+// https://leetcode.cn/problems/Next-Permutation

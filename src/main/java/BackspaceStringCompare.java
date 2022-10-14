@@ -32,3 +32,4 @@ public class BackspaceStringCompare {
         return sb.toString();
     }
 }
+// https://leetcode.cn/problems/Backspace-String-Compare

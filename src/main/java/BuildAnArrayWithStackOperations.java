@@ -36,3 +36,4 @@ public class BuildAnArrayWithStackOperations{
         return ans;
     }
 }
+// https://leetcode.cn/problems/Build-An-Array-With-Stack-Operations

@@ -30,3 +30,5 @@ public class Head2TailLinkedList {
         return arr;
     }
 }
+
+// https://leetcode.cn/problems/Head2Tail-Linked-List

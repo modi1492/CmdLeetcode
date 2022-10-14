@@ -27,3 +27,4 @@ public class RemoveAllAdjacentDuplicatesInString {
         return sb.reverse().toString();
     }
 }
+// https://leetcode.cn/problems/Remove-All-Adjacent-Duplicates-In-String

@@ -18,3 +18,5 @@ public class MinCostClimbingStairs {
         return Math.min(dp[len - 1], dp[len - 2]);
     }
 }
+
+// https://leetcode.cn/problems/Min-Cost-Climbing-Stairs

@@ -27,3 +27,5 @@ public class DetectCapital {
         return c >= 'A' && c <= 'Z';
     }
 }
+
+// https://leetcode.cn/problems/Detect-Capital

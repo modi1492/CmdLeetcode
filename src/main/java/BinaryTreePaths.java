@@ -47,3 +47,5 @@ public class BinaryTreePaths {
         return lst;
     }
 }
+
+// https://leetcode.cn/problems/Binary-Tree-Paths

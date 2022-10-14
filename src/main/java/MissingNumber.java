@@ -15,3 +15,5 @@ public class MissingNumber {
         return expect - sum;
     }
 }
+
+// https://leetcode.cn/problems/Missing-Number

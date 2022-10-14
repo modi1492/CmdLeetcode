@@ -25,3 +25,4 @@ public class ReverseLinkedList{
         return second;
     }
 }
+// https://leetcode.cn/problems/Reverse-Linked-List

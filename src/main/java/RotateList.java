@@ -40,3 +40,5 @@ public class RotateList {
         return q;
     }
 }
+
+// https://leetcode.cn/problems/Rotate-List

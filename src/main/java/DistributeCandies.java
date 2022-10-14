@@ -14,3 +14,4 @@ public class DistributeCandies {
         return Math.min(set.size(), candies.length / 2);
     }
 }
+// https://leetcode.cn/problems/Distribute-Candies

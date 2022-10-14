@@ -22,3 +22,5 @@ public class SumOfSquareNumbers {
         return i <= j;
     }
 }
+
+// https://leetcode.cn/problems/Sum-Of-Square-Numbers

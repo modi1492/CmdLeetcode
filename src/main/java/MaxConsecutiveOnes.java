@@ -21,3 +21,5 @@ public class MaxConsecutiveOnes {
         return maxOneNumber;
     }
 }
+
+// https://leetcode.cn/problems/Max-Consecutive-Ones

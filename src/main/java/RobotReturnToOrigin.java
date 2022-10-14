@@ -32,3 +32,4 @@ public class RobotReturnToOrigin {
         return upNumb == downNum && leftNum == rightNum;
     }
 }
+// https://leetcode.cn/problems/Robot-Return-To-Origin

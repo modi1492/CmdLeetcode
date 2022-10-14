@@ -41,3 +41,5 @@ public class IntersectionOfTwoLinkedLists {
         }
     }
 }
+
+// https://leetcode.cn/problems/Intersection-Of-Two-Linked-Lists

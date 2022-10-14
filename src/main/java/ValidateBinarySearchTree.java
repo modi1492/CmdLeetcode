@@ -23,3 +23,5 @@ public class ValidateBinarySearchTree {
                 && isValidBST(treeNode.right, treeNode.val, max);
     }
 }
+
+// https://leetcode.cn/problems/Validate-Binary-Search-Tree

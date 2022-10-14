@@ -29,3 +29,5 @@ public class PowxN {
         }
     }
 }
+
+// https://leetcode.cn/problems/Powx-N

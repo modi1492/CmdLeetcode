@@ -17,3 +17,4 @@ public class PowerOfFour{
         return n == 1;
     }
 }
+// https://leetcode.cn/problems/Power-Of-Four

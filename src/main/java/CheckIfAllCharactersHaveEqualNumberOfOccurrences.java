@@ -37,3 +37,5 @@ public class CheckIfAllCharactersHaveEqualNumberOfOccurrences {
         return true;
     }
 }
+
+// https://leetcode.cn/problems/Check-If-All-Characters-Have-Equal-Number-Of-Occurrences

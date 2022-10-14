@@ -30,3 +30,5 @@ public class TwoSumIIInputArrayIsSorted {
         return new int[] {i + 1, j + 1};
     }
 }
+
+// https://leetcode.cn/problems/Two-Sum-IIInput-Array-Is-Sorted

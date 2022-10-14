@@ -40,3 +40,4 @@ public class NonDecreasingArray {
         return true;
     }
 }
+// https://leetcode.cn/problems/Non-Decreasing-Array

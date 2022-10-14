@@ -23,3 +23,5 @@ public class CanMakeArithmeticProgressionFromSequence {
         return true;
     }
 }
+
+// https://leetcode.cn/problems/Can-Make-Arithmetic-Progression-From-Sequence

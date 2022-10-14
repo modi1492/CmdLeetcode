@@ -30,3 +30,4 @@ public class FirstBadVersion {
         return true;
     }
 }
+// https://leetcode.cn/problems/First-Bad-Version

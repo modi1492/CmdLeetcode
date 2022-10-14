@@ -7,3 +7,5 @@ public class DeleteMiddleNode {
         node.next = node.next.next;
     }
 }
+
+// https://leetcode.cn/problems/Delete-Middle-Node

@@ -11,3 +11,4 @@ public class DeleteNodeInALinkedList {
         node.next = node.next.next;
     }
 }
+// https://leetcode.cn/problems/Delete-Node-In-ALinked-List

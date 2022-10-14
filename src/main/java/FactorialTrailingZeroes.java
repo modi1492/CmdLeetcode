@@ -36,3 +36,4 @@ public class FactorialTrailingZeroes {
         return ans;
     }
 }
+// https://leetcode.cn/problems/Factorial-Trailing-Zeroes

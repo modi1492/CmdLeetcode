@@ -21,3 +21,4 @@ public class MaximumProductOfTwoElementsInAnArray {
         return (largest - 1) * (secondLarget - 1);
     }
 }
+// https://leetcode.cn/problems/Maximum-Product-Of-Two-Elements-In-An-Array

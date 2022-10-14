@@ -14,3 +14,5 @@ public class KMinNumber {
         return ans;
     }
 }
+
+// https://leetcode.cn/problems/KMin-Number

@@ -30,3 +30,4 @@ public class FindTheTownJudge {
         return -1;
     }
 }
+// https://leetcode.cn/problems/Find-The-Town-Judge

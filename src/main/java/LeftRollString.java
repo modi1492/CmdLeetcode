@@ -17,3 +17,5 @@ public class LeftRollString {
         return s2.concat(s1);
     }
 }
+
+// https://leetcode.cn/problems/Left-Roll-String

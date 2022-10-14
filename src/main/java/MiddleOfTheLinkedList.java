@@ -30,3 +30,4 @@ public class MiddleOfTheLinkedList {
         return first;
     }
 }
+// https://leetcode.cn/problems/Middle-Of-The-Linked-List

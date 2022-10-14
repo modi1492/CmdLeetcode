@@ -19,3 +19,5 @@ public class Zifuchuandepailie {
         return (String[]) lst.toArray();
     }
 }
+
+// https://leetcode.cn/problems/Zifuchuandepailie

@@ -59,3 +59,4 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
         return new int[]{first, last};
     }
 }
+// https://leetcode.cn/problems/Find-First-And-Last-Position-Of-Element-In-Sorted-Array

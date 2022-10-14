@@ -21,3 +21,4 @@ public class UniqueNumberOfOccurrences {
         return set.size() == map.values().size();
     }
 }
+// https://leetcode.cn/problems/Unique-Number-Of-Occurrences

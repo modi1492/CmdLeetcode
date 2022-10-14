@@ -59,3 +59,5 @@ public class PalindromePartitioning {
         return true;
     }
 }
+
+// https://leetcode.cn/problems/Palindrome-Partitioning

@@ -47,3 +47,4 @@ public class ParkingSystem {
         }
     }
 }
+// https://leetcode.cn/problems/Parking-System

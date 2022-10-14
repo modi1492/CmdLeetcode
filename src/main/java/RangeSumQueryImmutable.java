@@ -17,3 +17,4 @@ public class RangeSumQueryImmutable{
         return sum;
     }
 }
+// https://leetcode.cn/problems/Range-Sum-Query-Immutable

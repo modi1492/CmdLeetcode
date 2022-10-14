@@ -34,3 +34,5 @@ public class CheckPermutationLcci {
         return map;
     }
 }
+
+// https://leetcode.cn/problems/Check-Permutation-Lcci

@@ -31,3 +31,4 @@ public class ConvertBinaryNumberInALinkedListToInteger {
         return ans;
     }
 }
+// https://leetcode.cn/problems/Convert-Binary-Number-In-ALinked-List-To-Integer

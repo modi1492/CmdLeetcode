@@ -76,3 +76,5 @@ public class NQueens {
         return true;
     }
 }
+
+// https://leetcode.cn/problems/NQueens

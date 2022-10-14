@@ -27,3 +27,5 @@ public class ArithmeticSlices {
         return res;
     }
 }
+
+// https://leetcode.cn/problems/Arithmetic-Slices

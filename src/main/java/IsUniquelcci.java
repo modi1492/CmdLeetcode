@@ -27,3 +27,5 @@ public class IsUniquelcci {
         return true;
     }
 }
+
+// https://leetcode.cn/problems/Is-Uniquelcci

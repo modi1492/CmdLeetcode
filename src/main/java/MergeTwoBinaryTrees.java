@@ -18,3 +18,4 @@ public class MergeTwoBinaryTrees {
         return merged;
     }
 }
+// https://leetcode.cn/problems/Merge-Two-Binary-Trees

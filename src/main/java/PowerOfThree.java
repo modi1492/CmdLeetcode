@@ -20,3 +20,4 @@ public class PowerOfThree{
         return n == 1;
     }
 }
+// https://leetcode.cn/problems/Power-Of-Three

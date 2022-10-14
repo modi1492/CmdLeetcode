@@ -24,3 +24,4 @@ public class NestedListWeightSum {
         return ans;
     }
 }
+// https://leetcode.cn/problems/Nested-List-Weight-Sum

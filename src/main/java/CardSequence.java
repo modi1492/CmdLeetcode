@@ -25,3 +25,5 @@ public class CardSequence {
         return true;
     }
 }
+
+// https://leetcode.cn/problems/Card-Sequence

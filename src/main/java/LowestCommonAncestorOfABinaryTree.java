@@ -64,3 +64,4 @@ public class LowestCommonAncestorOfABinaryTree {
         System.out.println(l.lowestCommonAncestor(t3,t5,t1).val);
     }
 }
+// https://leetcode.cn/problems/Lowest-Common-Ancestor-Of-ABinary-Tree

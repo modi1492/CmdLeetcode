@@ -23,3 +23,4 @@ public class ArmstrongNumber {
         return ans == N;
     }
 }
+// https://leetcode.cn/problems/Armstrong-Number

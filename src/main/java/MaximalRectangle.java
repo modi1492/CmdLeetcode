@@ -37,3 +37,5 @@ public class MaximalRectangle {
         return maxarea;
     }
 }
+
+// https://leetcode.cn/problems/Maximal-Rectangle

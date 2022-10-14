@@ -14,3 +14,5 @@ public class ArrayDuplicated {
         return -1;
     }
 }
+
+// https://leetcode.cn/problems/Array-Duplicated

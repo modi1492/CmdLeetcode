@@ -31,3 +31,4 @@ public class KidsWithTheGreatestNumberOfCandies {
         return list;
     }
 }
+// https://leetcode.cn/problems/Kids-With-The-Greatest-Number-Of-Candies

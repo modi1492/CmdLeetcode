@@ -21,3 +21,5 @@ public class QuickCalc {
         return x + y;
     }
 }
+
+// https://leetcode.cn/problems/Quick-Calc

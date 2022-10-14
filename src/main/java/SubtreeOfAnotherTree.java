@@ -25,3 +25,4 @@ public class SubtreeOfAnotherTree {
         return s.val == t.val && sameTree(s.left, t.left) && sameTree(s.right, t.right);
     }
 }
+// https://leetcode.cn/problems/Subtree-Of-Another-Tree

@@ -41,3 +41,4 @@ public class ArrayTransformation {
         }
         return ans;
 }}
+// https://leetcode.cn/problems/Array-Transformation

@@ -89,3 +89,5 @@ public class LruCache {
         node.next.prev = node.prev;
     }
 }
+
+// https://leetcode.cn/problems/Lru-Cache

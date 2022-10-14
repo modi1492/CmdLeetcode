@@ -38,3 +38,5 @@ public class HappyNumber {
         return ans;
     }
 }
+
+// https://leetcode.cn/problems/Happy-Number

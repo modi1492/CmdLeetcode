@@ -2,7 +2,7 @@ import basic.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// https://leetcode.cn/problems/Binary-Tree-Inorder-Traversal/
 public class BinaryTreeInorderTraversal {
     public static void main(String[] args) {
 
@@ -23,3 +23,4 @@ public class BinaryTreeInorderTraversal {
         return lst;
     }
 }
+// https://leetcode.cn/problems/Binary-Tree-Inorder-Traversal

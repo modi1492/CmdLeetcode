@@ -12,3 +12,5 @@ public class StringRotationLcci {
         return s.contains(s1);
     }
 }
+
+// https://leetcode.cn/problems/String-Rotation-Lcci

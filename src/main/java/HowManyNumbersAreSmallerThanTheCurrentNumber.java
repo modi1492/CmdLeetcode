@@ -26,3 +26,4 @@ public class HowManyNumbersAreSmallerThanTheCurrentNumber {
         return ans;
     }
 }
+// https://leetcode.cn/problems/How-Many-Numbers-Are-Smaller-Than-The-Current-Number

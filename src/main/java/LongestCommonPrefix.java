@@ -43,3 +43,5 @@ public class LongestCommonPrefix {
     }
 
 }
+
+// https://leetcode.cn/problems/Longest-Common-Prefix

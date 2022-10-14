@@ -13,3 +13,4 @@ public class RelativeRanks {
         System.out.println(queue);
     }
 }
+// https://leetcode.cn/problems/Relative-Ranks

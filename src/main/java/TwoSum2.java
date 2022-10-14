@@ -14,3 +14,5 @@ public class TwoSum2 {
         return new int[0];
     }
 }
+
+// https://leetcode.cn/problems/Two-Sum2

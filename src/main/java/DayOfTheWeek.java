@@ -18,3 +18,4 @@ public class DayOfTheWeek {
         return week[index];
     }
 }
+// https://leetcode.cn/problems/Day-Of-The-Week

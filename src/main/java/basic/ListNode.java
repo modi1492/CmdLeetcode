@@ -43,5 +43,15 @@ public class ListNode {
         return dummy.next;
     }
 
+    public static String toString(ListNode l){
+        ListNode p = l;
+        StringBuilder s = new StringBuilder();
+        while (p != null){
+            s.append(p.val);
+            p = p.next;
+        }
+        return s.toString();
+    }
+
 }
  

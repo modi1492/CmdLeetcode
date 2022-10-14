@@ -28,3 +28,4 @@ public class MajorityElement {
         return ans;
     }
 }
+// https://leetcode.cn/problems/Majority-Element

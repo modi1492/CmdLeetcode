@@ -16,3 +16,4 @@ public class SubtractTheProductAndSumOfDigitsOfAnInteger {
         return product - sum;
     }
 }
+// https://leetcode.cn/problems/Subtract-The-Product-And-Sum-Of-Digits-Of-An-Integer

@@ -31,3 +31,5 @@ public class CheckIfTwoStringArraysAreEquivalent {
 
     }
 }
+
+// https://leetcode.cn/problems/Check-If-Two-String-Arrays-Are-Equivalent

@@ -28,3 +28,5 @@ public class NThTribonacciNumber {
         return t2;
     }
 }
+
+// https://leetcode.cn/problems/NTh-Tribonacci-Number

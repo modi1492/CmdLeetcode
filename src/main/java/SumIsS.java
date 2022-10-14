@@ -18,3 +18,5 @@ public class SumIsS {
         return new int[][]{};
     }
 }
+
+// https://leetcode.cn/problems/Sum-Is-S

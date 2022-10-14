@@ -29,3 +29,5 @@ public class GetMaximumInGeneratedArray {
         return max;
     }
 }
+
+// https://leetcode.cn/problems/Get-Maximum-In-Generated-Array

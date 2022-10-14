@@ -29,3 +29,5 @@ public class FindMajorityElementLcci {
         return count * 2 > nums.length ? candidate : -1;
     }
 }
+
+// https://leetcode.cn/problems/Find-Majority-Element-Lcci

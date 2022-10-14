@@ -19,3 +19,5 @@ public class ReplaceSpace {
         return sb.toString();
     }
 }
+
+// https://leetcode.cn/problems/Replace-Space

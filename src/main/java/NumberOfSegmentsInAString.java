@@ -30,3 +30,4 @@ public class NumberOfSegmentsInAString {
         return ans;
     }
 }
+// https://leetcode.cn/problems/Number-Of-Segments-In-AString

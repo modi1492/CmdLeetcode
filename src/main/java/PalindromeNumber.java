@@ -23,3 +23,5 @@ public class PalindromeNumber {
         return x == halfReverse || x == halfReverse / 10;
     }
 }
+
+// https://leetcode.cn/problems/Palindrome-Number

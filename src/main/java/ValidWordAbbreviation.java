@@ -55,3 +55,4 @@ public class ValidWordAbbreviation {
         return i <= word.length();
     }
 }
+// https://leetcode.cn/problems/Valid-Word-Abbreviation

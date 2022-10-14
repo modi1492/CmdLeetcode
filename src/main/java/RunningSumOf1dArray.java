@@ -30,3 +30,4 @@ public class RunningSumOf1dArray {
         System.out.println();
     }
 }
+// https://leetcode.cn/problems/Running-Sum-Of1d-Array

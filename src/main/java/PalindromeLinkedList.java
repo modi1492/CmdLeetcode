@@ -56,3 +56,4 @@ public class PalindromeLinkedList {
         return true;
     }
 }
+// https://leetcode.cn/problems/Palindrome-Linked-List

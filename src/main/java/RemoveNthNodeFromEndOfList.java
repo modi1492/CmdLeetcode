@@ -22,3 +22,4 @@ public class RemoveNthNodeFromEndOfList {
         return dummy.next;
     }
 }
+// https://leetcode.cn/problems/Remove-Nth-Node-From-End-Of-List

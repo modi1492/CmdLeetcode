@@ -28,3 +28,5 @@ public class FirstMissingPositive {
         return 0;
     }
 }
+
+// https://leetcode.cn/problems/First-Missing-Positive

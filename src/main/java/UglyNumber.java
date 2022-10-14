@@ -19,3 +19,5 @@ public class UglyNumber {
         return n == 1;
     }
 }
+
+// https://leetcode.cn/problems/Ugly-Number

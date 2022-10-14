@@ -43,3 +43,5 @@ public class IntersectionOfTwoArraysII {
         return Arrays.copyOfRange(intersection, 0, index);
     }
 }
+
+// https://leetcode.cn/problems/Intersection-Of-Two-Arrays-II

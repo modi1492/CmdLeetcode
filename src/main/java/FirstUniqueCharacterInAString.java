@@ -26,3 +26,5 @@ public class FirstUniqueCharacterInAString {
         return res;
     }
 }
+
+// https://leetcode.cn/problems/First-Unique-Character-In-AString

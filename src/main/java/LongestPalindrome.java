@@ -22,3 +22,5 @@ class LongestPalindrome {
     }
 }
 
+
+// https://leetcode.cn/problems/Longest-Palindrome

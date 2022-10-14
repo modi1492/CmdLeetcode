@@ -22,3 +22,4 @@ public class RemoveVowelsFromAString {
         return sb.toString();
     }
 }
+// https://leetcode.cn/problems/Remove-Vowels-From-AString

@@ -46,3 +46,5 @@ public class LeafSimilarTrees {
         help(treeNode.right, lst);
     }
 }
+
+// https://leetcode.cn/problems/Leaf-Similar-Trees

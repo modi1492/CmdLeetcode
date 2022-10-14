@@ -31,3 +31,5 @@ public class NextGreaterElementI {
         return res;
     }
 }
+
+// https://leetcode.cn/problems/Next-Greater-Element-I

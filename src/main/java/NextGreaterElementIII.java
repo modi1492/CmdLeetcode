@@ -64,3 +64,5 @@ public class NextGreaterElementIII {
         nums[j] = tmp;
     }
 }
+
+// https://leetcode.cn/problems/Next-Greater-Element-III

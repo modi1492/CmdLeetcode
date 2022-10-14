@@ -30,3 +30,4 @@ public class SelfDividingNumbers {
         return true;
     }
 }
+// https://leetcode.cn/problems/Self-Dividing-Numbers

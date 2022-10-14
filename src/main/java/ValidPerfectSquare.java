@@ -13,3 +13,4 @@ public class ValidPerfectSquare {
         return false;
     }
 }
+// https://leetcode.cn/problems/Valid-Perfect-Square

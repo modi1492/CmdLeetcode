@@ -28,3 +28,5 @@ public class FirstOnlyOneCharacter {
         return ' ';
     }
 }
+
+// https://leetcode.cn/problems/First-Only-One-Character

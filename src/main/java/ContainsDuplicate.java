@@ -28,3 +28,5 @@ public class ContainsDuplicate {
         return false;
     }
 }
+
+// https://leetcode.cn/problems/Contains-Duplicate

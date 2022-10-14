@@ -35,3 +35,4 @@ public class PascalsTriangle {
         return ans;
     }
 }
+// https://leetcode.cn/problems/Pascals-Triangle

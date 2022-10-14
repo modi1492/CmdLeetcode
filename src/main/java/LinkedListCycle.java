@@ -24,7 +24,23 @@ public class LinkedListCycle {
         } while (slow != fast);
         return true;
     }
+
+    public boolean hasCycle1(ListNode head) {
+        HashSet<ListNode> hashSet = new HashSet<ListNode>();
+        ListNode p = head;
+        while(p != null){
+            if(hashSet.contains(p)){
+                return true;
+            }
+            hashSet.add(p);
+            p = p.next;
+
+        }
+        return false;
+    }
 }
 
 
 
+
+// https://leetcode.cn/problems/Linked-List-Cycle
